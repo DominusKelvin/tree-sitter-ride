@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-ride",
+  "version": "1.0.0",
+  "description": "Ride grammar for tree-sitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominuskelvin/tree-sitter-ride.git"
+  },
+  "keywords": [
+    "tree-sitter",
+    "ride",
+    "parser"
+  ],
+  "author": "Kelvin Omereshone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominuskelvin/tree-sitter-ride/issues"
+  },
+  "homepage": "https://github.com/dominuskelvin/tree-sitter-ride#readme",
+  "dependencies": {
+    "nan": "^2.14.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.16.2"
+  }
+}
