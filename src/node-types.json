@@ -1,11 +1,640 @@
 [
   {
-    "type": "source_file",
+    "type": "basic_type",
     "named": true,
     "fields": {}
   },
   {
-    "type": "hello",
+    "type": "binary_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list_declaration",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "type_matching",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "basic_type",
+          "named": true
+        },
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list_declaration",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "predefined_data_structures",
+          "named": true
+        },
+        {
+          "type": "special_type",
+          "named": true
+        },
+        {
+          "type": "transaction_type",
+          "named": true
+        },
+        {
+          "type": "type_matching",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "variable_declaration_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "directive_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "directive_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list_declaration",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "type_matching",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "parameter_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "basic_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "predefined_data_structures",
+          "named": true
+        },
+        {
+          "type": "special_type",
+          "named": true
+        },
+        {
+          "type": "transaction_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "predefined_data_structures",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive_type",
+          "named": true
+        },
+        {
+          "type": "directive_value",
+          "named": true
+        },
+        {
+          "type": "function_definition",
+          "named": true
+        },
+        {
+          "type": "variable_declaration_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "special_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "transaction_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "type_matching",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "unary_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list_declaration",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "type_matching",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_declaration_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "list_declaration",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "type_matching",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "#-}",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "/",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": "=>",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "@Callable",
+    "named": false
+  },
+  {
+    "type": "@Verifier",
+    "named": false
+  },
+  {
+    "type": "ACCOUNT",
+    "named": false
+  },
+  {
+    "type": "ASSET",
+    "named": false
+  },
+  {
+    "type": "Address",
+    "named": false
+  },
+  {
+    "type": "Alias",
+    "named": false
+  },
+  {
+    "type": "AliasTransaction",
+    "named": false
+  },
+  {
+    "type": "AssetInfo",
+    "named": false
+  },
+  {
+    "type": "BlockInfo",
+    "named": false
+  },
+  {
+    "type": "Boolean",
+    "named": false
+  },
+  {
+    "type": "BurnTransaction",
+    "named": false
+  },
+  {
+    "type": "ByteVector",
+    "named": false
+  },
+  {
+    "type": "CONTENT_TYPE",
+    "named": false
+  },
+  {
+    "type": "DataEntry",
+    "named": false
+  },
+  {
+    "type": "DataTransaction",
+    "named": false
+  },
+  {
+    "type": "EXPRESSION",
+    "named": false
+  },
+  {
+    "type": "ExchangeTransaction",
+    "named": false
+  },
+  {
+    "type": "GenesisTransaction",
+    "named": false
+  },
+  {
+    "type": "Int",
+    "named": false
+  },
+  {
+    "type": "Invocation",
+    "named": false
+  },
+  {
+    "type": "InvokeScriptTransaction",
+    "named": false
+  },
+  {
+    "type": "IssueTransaction",
+    "named": false
+  },
+  {
+    "type": "LeaseCancelTransaction",
+    "named": false
+  },
+  {
+    "type": "LeaseTransaction",
+    "named": false
+  },
+  {
+    "type": "MassTransferTransaction",
+    "named": false
+  },
+  {
+    "type": "ReissueTransaction",
+    "named": false
+  },
+  {
+    "type": "SCRIPT_TYPE",
+    "named": false
+  },
+  {
+    "type": "STDLIB_VERSION",
+    "named": false
+  },
+  {
+    "type": "ScriptResult",
+    "named": false
+  },
+  {
+    "type": "ScriptTransfer",
+    "named": false
+  },
+  {
+    "type": "SetAssetScriptTransaction",
+    "named": false
+  },
+  {
+    "type": "SetScriptTransaction",
+    "named": false
+  },
+  {
+    "type": "SponsorshipTransaction",
+    "named": false
+  },
+  {
+    "type": "String",
+    "named": false
+  },
+  {
+    "type": "TransferSet",
+    "named": false
+  },
+  {
+    "type": "UpdateAssetInfoTransaction",
+    "named": false
+  },
+  {
+    "type": "WriteSet",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "case",
+    "named": false
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "else if",
+    "named": false
+  },
+  {
+    "type": "func",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "let",
+    "named": false
+  },
+  {
+    "type": "match",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "then",
+    "named": false
+  },
+  {
+    "type": "unit",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "{-#",
+    "named": false
+  },
+  {
+    "type": "}",
     "named": false
   }
 ]
