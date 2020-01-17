@@ -16,6 +16,9 @@ module.exports = grammar({
     ),
 
     function_definition: $ => seq(
+      optional(
+        $._annotation
+      ),
       'func',
       $.identifier,
       $.parameter_list,
